@@ -95,7 +95,7 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     },
 }
-
+# testeteste
 DATABASE_URL = os.environ.get("DATABASE_URL")
 
 if DATABASE_URL:
