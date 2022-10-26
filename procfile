@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT _entregakomercio.wsgi:application
+web: waitress-serve --port=$PORT _entregakomercio.wsgi:application --preload=true
