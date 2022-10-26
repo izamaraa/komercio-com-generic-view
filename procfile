@@ -1,1 +1,1 @@
-web: gunicorn _entregakomercio.wsgi --log-level debug
+web: waitress-serve --port=$PORT nome_do_seu_projeto.wsgi:application
