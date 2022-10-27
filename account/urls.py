@@ -8,9 +8,9 @@ urlpatterns = [
     # logar usuario
     path("login/", obtain_auth_token),
     # listar usuarios do mais novo ao mais antigo
-    path("accounts/newest/<int:num>/", ListCreateAccountView.as_view()),
+    path("accounts/newest/<num>/", ListCreateAccountView.as_view()),
     # atualizar dados de usuario
-    path("accounts/<int:num>/", PatchAccountView.as_view()),
+    path("accounts/<num>/", PatchAccountView.as_view()),
     # ativar/desativar conta (trocar is_active para False/True).
-    path("accounts/<int:num>/management/", PatchAccountManagementView.as_view()),
+    path("accounts/<num>/management/", PatchAccountManagementView.as_view()),
 ]
