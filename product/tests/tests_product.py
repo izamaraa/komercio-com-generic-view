@@ -3,7 +3,6 @@ from rest_framework.views import status
 from product.models import Product
 from account.models import Account
 from rest_framework.authtoken.models import Token
-import ipdb
 
 
 class TestViewProduct(APITestCase):
